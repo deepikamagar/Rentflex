@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <nav>
+        <div id="logo">
+          <img src="../images/logo.png" alt="Rentflex Logo" width="100vh" />
+        </div>
+        <div class="nav-items">
+          <li>
+            <a href="index.html"><i class="uil uil-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="./addroomform.html">
+              <i class="uil uil-plus"></i>Add Rooms</a
+            >
+          </li>
+          <!-- <li> -->
+          <!-- <a href="#"><i class="uil uil-airplay"></i>Feedback</a>-->
+          <!-- </li> -->
+          <li>
+            <a href="./L&Rform.html"
+              ><i class="uil uil-user"></i>Login/Register</a
+            >
+          </li>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main-->
+    <section class="section-hero">
+      <div class="hero">
+        <h2>Rentflex</h2>
+        <p>Find your perfect room to rent.</p>
+      </div>
+      <div class="imgslider"></div>
+    </section>
+
+    <!--searchsection-->
+    <section class="section-search">
+      <div class="search-container">
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter location" />
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" placeholder="Enter price" />
+
+        <button onclick="search()"><i class="uil uil-search"></i></button>
+      </div>
+      <!-- Results will be displayed here -->
+      <div id="results-container"></div>
+    </section>
+
+    <!--Rooms section-->
+    <section class="section-rooms" id="rooms">
+      <div class="heading">
+        <h2>Newly Added Rooms</h2>
+      </div>
+      <section id="featured-rooms">
+        <div class="room">
+          <img src="../images/img1.jpg" alt=" Room 1" />
+          <h3>Title:Room1</h3>
+          <p>Price:Rs.2000</p>
+          <p>Location:Butwal</p>
+          <a href="#">View Details</a>
+        </div>
+        <div class="room">
+          <img src="../images/img2.jpg" alt="Room 2" />
+          <h3>Title:Room 2</h3>
+          <p>Price:Rs.3000</p>
+          <p>Location:Bhairahawa</p>
+          <a href="#">View Details</a>
+        </div>
+      </section>
+    </section>
+
+    <!--footer section-->
+    <footer>
+      <div id="footer-links">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <p style="color: #883d1a">&copy; 2023 Rentflex. All rights reserved.</p>
+    </footer>
+    <!--JS link-->
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

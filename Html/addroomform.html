@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>addroom Form</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/addroomform.css" />
+  </head>
+  <body>
+    <form method="post" action="#">
+      <h1 class="heading">Add room</h1>
+      <div class="content1">
+        <h3>Basic Details:</h3>
+        <label for ="Title" class="form-level">Title:</label>
+        <input type="text" name="title" class="box"placeholder="room for rent" required /><br><br>
+
+        <label for="Contact Number"class="form-level">Contact Number:</label>
+        <input type="tel" name="Contact-No" pattern="[0-9]{10}" title="Please enter a valid number"  placeholder="Enter your number" class="box"required /><br><br>
+
+        <label for ="Price"class="form-level">Price:</label>
+        <input type="number" name="Price" class="box"placeholder="eg.3000" step="100" required /><br><br>
+
+         <label for ="Price Negotiable"class="form-level">Price Negotiable:</label>
+         <input type="checkbox" name="Yes" value="Yes"/> Yes
+         <input type="checkbox" name="No" value="No"/>No
+         <br><br>
+
+         <label for="Room Location"class="form-level">Room Location:</label>
+        <input type="text" name="location" class="box"placeholder="eg.Tilottama-7,Bhalwari" required /><br><br>
+
+        <label for="Room Size"class="form-level">Room Size:</label>
+        <input type="text" name="room-size" class="box"placeholder="eg.120 sq.ft" required/><br><br>
+
+       <label for="Room Photo"class="form-level">Room Photo:</label>
+      <input type="file" name="photo" required />
+      </div><br>
+
+      <div class="content2">
+        <h3>Others Details:</h3>
+        <label class="form-level">Room Facilities:</label>
+        <label><input type="checkbox" name="Attached bathroom" value=" bathroom" /> Attached bathroom </label>
+        <label><input type="checkbox" name="Attached kitchen" value=" kitchen" /> Attached kitchen</label>
+        <label><input type="checkbox" name="Water Facility"value=" water facility" /> Water Facility</label>
+        <label><input type="checkbox"  name="wifi" value=" wifi"/> WiFi </label><br>
+    
+        <label class="form-level" >Local area Facilities:</label>
+        <label><input type="checkbox" name="school" value=" school" /> School</label>
+        <label><input type="checkbox" name="College" value="College" /> College</label>
+        <label><input type="checkbox" name="Market" value="Market" /> Market</label>
+        <label><input type="checkbox" name="Hospital" value="Hospital"/> Hospital</label>
+        <label><input type="checkbox" name="Bank" value="Bank"/> Bank</label>
+        <label><input type="checkbox" name="cafe" value="cafe"/> Cafe</label>
+        <label><input type="checkbox" name="Busstop" value=" Busstop"/> Bus stop</label>
+        <label><input type="checkbox" name="Busstop" value=" Busstop"/> Gym</label>
+      <br>
+
+     <label for="additionalDetails" class="form-level" >Additional Details(Optional):</label>
+             <textarea name="additionalDetails" placeholder="Type here...."></textarea>
+      </div>
+      
+      <div class="submit-btn">
+      <button type="submit">Submit for Approval</button>
+      </div>
+    </form>
+
+      </div>
+    </form>
+  </body>
+</html>
