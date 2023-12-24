@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forget password page</title>
+    <!------Internal CSS------->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #e8f0fe;
+        box-sizing: border-box;
+        /*background-image: url("../images/img4.png");
+            background-size: cover;*/
+      }
+      .form-section {
+        min-height: 100vh;
+        padding: 50px;
+        text-align: center;
+      }
+      .form-container {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-container h2 {
+        font-size: 25px;
+        color: #883d1a;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #883d1a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="form-section">
+      <div class="form-container">
+        <h2>Forget Password</h2>
+        <p>Enter your email to create a new password</p>
+        <form method="" action="">
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              placeholder=" Enter your email"
+              required
+            />
+          </div>
+
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

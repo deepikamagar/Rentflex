@@ -1,7 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  padding: 0;
 }
+
 /*header css*/
 header {
   display: flex;
@@ -15,7 +17,6 @@ nav {
   background: burlywood;
   display: flex;
   align-items: left;
-
   padding: 8px;
 }
 nav .nav-items {
@@ -47,13 +48,13 @@ section {
   padding: 9.6rem 0;
   height: 5vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: url(../images/img4.png);
   background-size: cover;
   background-position: center;
 }
-.hero {
+.hero-text {
   font-size: 2rem;
   font-weight: 500;
   color: #883d1a;
@@ -156,7 +157,7 @@ button:hover {
   padding: 10px;
   margin: 10px;
   width: 30%;
-  background-color: burlywood;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .room img {
