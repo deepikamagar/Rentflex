@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post room form</title>
+    <link rel="stylesheet" href="../CSS/postroom.css" />
+  </head>
+  <body>
+    <section class="container">
+      <form>
+        <h2 class="heading">Post room</h2>
+        <table>
+          <tr>
+            <th class="sub-heading" colspan="2">Room Details</th>
+          </tr>
+          <tr>
+            <td class="row-style">Title:</td>
+            <td>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                class="box"
+                placeholder="Room title"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Location:</td>
+            <td>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                class="box"
+                placeholder="Tilottama-7,Bhalwari"
+                required
+              />
+            </td>
+          </tr>
+          <tr class="row-name">
+            <td class="row-style">Contact Number:</td>
+            <td>
+              <input
+                type="tel"
+                id="number"
+                name="Contactnumber"
+                pattern="[0-9]{10}"
+                class="box"
+                placeholder="Enter your number"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Price:</td>
+            <td>
+              <input
+                type="number"
+                id="price"
+                name="MonthlyRentPrice"
+                class="box"
+                placeholder="eg.3000"
+                step="100"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Price Negotiable:</td>
+            <td>
+              <input type="checkbox" name="Yes" value="Yes" />Yes
+              <input type="checkbox" name="No" value="No" />No
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Room Type:</td>
+            <td>
+              <input type="checkbox" name="Large" value="Large" />Large
+              <input type="checkbox" name="Medium" value="Medium" />Medium
+              <input type="checkbox" name="Small" value="Small" />Small
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Room Area:</td>
+            <td>
+              <input
+                type="text"
+                id="area"
+                name="room-area"
+                class="box"
+                placeholder="eg.120 sq.ft"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Upload Photo:</td>
+            <td><input type="file" id="photo" name="photo" /></td>
+          </tr>
+          <tr>
+            <th class="sub-heading" colspan="2">Others Details</th>
+          </tr>
+          <tr>
+            <td class="row-style">Room Facilities:</td>
+            <td>
+              <input
+                type="checkbox"
+                name="Attached bathroom"
+                value=" bathroom"
+              />
+              Attached bathroom
+              <input type="checkbox" name="Attached kitchen" value=" kitchen" />
+              Attached kitchen
+              <input
+                type="checkbox"
+                name="Water Facility"
+                value=" water facility"
+              />
+              Water Facility
+              <input type="checkbox" name="wifi" value=" wifi" /> WiFi
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Local area Facilities:</td>
+            <td>
+              <input type="checkbox" name="School" value="School" /> School
+              <input type="checkbox" name="College" value="College" /> College
+              <input type="checkbox" name="Market" value="Market" /> Market
+              <input type="checkbox" name="Hospital" value="Hospital" />
+              Clinic/Hospital
+              <input type="checkbox" name="Bank" value="Bank" /> Bank
+              <input type="checkbox" name="cafe" value="cafe" /> Cafe
+              <input type="checkbox" name="Busstop" value=" Busstop" /> Bus stop
+              <input type="checkbox" name="Gym" value=" Gym" /> Gym
+            </td>
+          </tr>
+          <tr>
+            <td class="row-style">Additional Details:</td>
+            <td>
+              <textarea
+                rows="6"
+                cols="25"
+                id="textarea"
+                name="additionalDetails"
+                class="box"
+                placeholder="Type here...."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit">Submit for Approval</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </body>
+</html>
